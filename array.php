@@ -26,14 +26,14 @@ if (!isset($_SESSION['user_id'])) {
         <div class="nav-links">
             <a href="index.php">Home</a>
             <a href="materi.php" class="active">Materi</a>
-            <a href="kuis.php">Quiz</a>
+            <a href="#">Quiz</a>
             <a href="update_profil.php" class="profile-icon">👤</a>
         </div>
     </div>
 
     <main>
     <!-- TUTORIAL TITLE -->
-    <h1 class="tutorial-title">Perulangan</h1>
+    <h1 class="tutorial-title">Array</h1>
 
     <div class="tutorial-container">
         <!-- SECTION 1 -->
@@ -44,9 +44,7 @@ if (!isset($_SESSION['user_id'])) {
          <!-- SECTION 2 -->
         <h2 class="section-title">2. Deklarasi dan Inisialisasi Array</h2>
         <p class="content-text">a. Deklarasi array:</p>
-        <div class="code-block"><br>
-             &nbsp;tipe_data nama_array[jumlah_elemen];<br><br>
-        </div>
+        <p class="content-text"><code>tipe_data</code> <code>nama_array[jumlah_elemen];</p>
         
         <p class="content-text">&nbsp;&nbsp;&nbsp;&nbsp;Contoh:</p>
         <div class="code-block"><br>
@@ -108,7 +106,7 @@ if (!isset($_SESSION['user_id'])) {
 
     <!-- NAVIGATION BUTTONS -->
     <div class="nav-buttons">
-        <a href="perulangan.php"><button class="nav-button">Kembali</button></a>
+        <a href="materi.php"><button class="nav-button">Kembali</button></a>
         <a href="fungsi.php"><button class="nav-button">Lanjut</button></a>
     </div>
 </main>
