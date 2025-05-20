@@ -26,7 +26,7 @@ if (!isset($_SESSION['user_id'])) {
         <div class="nav-links">
             <a href="index.php">Home</a>
             <a href="materi.php" class="active">Materi</a>
-            <a href="kuis.php">Quiz</a>
+            <a href="#">Quiz</a>
             <a href="update_profil.php" class="profile-icon">👤</a>
         </div>
     </div>
@@ -48,10 +48,10 @@ if (!isset($_SESSION['user_id'])) {
         <p class="content-text">a. Perulangan For</p>
         <p class="content-text">Perulangan for digunakan ketika jumlah pengulangan sudah diketahui sebelumnya. Struktur for terdiri dari tiga bagian: inisialisasi, kondisi, dan perubahan nilai.</p>
         <div class="code-block">
-        <span class="comment">// Perulangan if</span><br>
+        <span class="comment">// Perulangan for</span><br>
             <br>
             <span class="type">for</span> (inisialisasi; kondisi; perubahan) {<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;// kode yang diulang<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">// kode yang diulang</span><br>
             }
         </div>
         <p class="content-text">b. Perulangan while</p>
@@ -60,7 +60,7 @@ if (!isset($_SESSION['user_id'])) {
         <span class="comment">// Perulangan while</span><br>
             <br>
             <span class="type">while</span> (kondisi) {<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;// kode yang diulang<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">// kode yang diulang</span><br>
             }<br>
         </div>
         <p class="content-text">c. Perulangan Do-while</p>
@@ -69,7 +69,7 @@ if (!isset($_SESSION['user_id'])) {
         <span class="comment">// Perulangan Do-while</span><br>
             <br>
             <span class="type">do </span>{<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;// kode yang diulang<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">// kode yang diulang</span><br>
             } <span class="type">while </span>(kondisi);<br>
         </div>
     <br>
@@ -77,7 +77,7 @@ if (!isset($_SESSION['user_id'])) {
 
     <!-- NAVIGATION BUTTONS -->
     <div class="nav-buttons">
-        <a href="percabangan.php"><button class="nav-button">Kembali</button></a>
+        <a href="materi.php"><button class="nav-button">Kembali</button></a>
         <a href="array.php"><button class="nav-button">Lanjut</button></a>
     </div>
 </main>
