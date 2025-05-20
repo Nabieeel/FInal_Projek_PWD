@@ -1,3 +1,17 @@
+<?php
+include 'koneksi.php';
+session_start();
+
+// Cek apakah session email sudah ada (user sudah login)
+if (!isset($_SESSION['user_id'])) {
+    header("Location: login.php");
+    exit();
+}
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="id">
 <head>

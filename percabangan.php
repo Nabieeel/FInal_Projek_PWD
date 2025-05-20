@@ -85,7 +85,7 @@ if (!isset($_SESSION['user_id'])) {
     <!-- NAVIGATION BUTTONS -->
     <div class="nav-buttons">
         <a href="variabel.php"><button class="nav-button">Kembali</button></a>
-        <a href="#"><button class="nav-button">Lanjut</button></a>
+        <a href="perulangan.php"><button class="nav-button">Lanjut</button></a>
     </div>
 </main>
 

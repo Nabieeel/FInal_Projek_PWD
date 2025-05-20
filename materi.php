@@ -58,17 +58,17 @@ if (!isset($_SESSION['user_id'])) {
                 <div class="card-title">Percabangan</div>
             </div>
         </a>
-        <a href="#looping" class="card-link">
+        <a href="perulangan.php" class="card-link">
             <div class="card">
                 <div class="card-title">Perulangan (Looping)</div>
             </div>
         </a>
-        <a href="#array" class="card-link">
+        <a href="array.php" class="card-link">
             <div class="card">
                 <div class="card-title">Array</div>
             </div>
         </a>
-        <a href="#fungsi" class="card-link">
+        <a href="fungsi.php" class="card-link">
             <div class="card">
                 <div class="card-title">Function dan Prosedur</div>
             </div>
