@@ -26,7 +26,7 @@ if (!isset($_SESSION['user_id'])) {
         <div class="nav-links">
             <a href="index.php">Home</a>
             <a href="materi.php" class="active">Materi</a>
-            <a href="kuis.php">Quiz</a>
+            <a href="#">Quiz</a>
             <a href="update_profil.php" class="profile-icon">👤</a>
         </div>
     </div>
@@ -37,54 +37,101 @@ if (!isset($_SESSION['user_id'])) {
 
     <div class="tutorial-container">
         <!-- SECTION 1 -->
-        <h2 class="section-title">1. Pengertian Percabangan</h2>
-        <p class="content-text justify">Percabangan dalam C++ digunakan untuk membuat program memilih dan mengeksekusi pernyataan berdasarkan kondisi tertentu. 
-            Dengan percabangan, alur program bisa bercabang tergantung nilai dari ekspresi logika.</p>
+        <h2 class="section-title">1. Pengertian</h2>
+        <p class="content-text justify">
+    Percabangan adalah salah satu konsep dasar dalam pemrograman yang memungkinkan program mengambil keputusan berdasarkan kondisi tertentu. Dalam C++, percabangan digunakan untuk mengontrol alur eksekusi program sehingga dapat menjalankan kode yang berbeda sesuai dengan hasil evaluasi suatu kondisi.</p>
 
         <br>
         <!-- SECTION 2 -->
-        <h2 class="section-title">2. Struktur dan Jenis Percabangan</h2>
-        <p class="content-text">Ada beberapa jenis percabangan dalam C++, yaitu:</p>
+        <h2 class="section-title">2. Jenis-Jenis Percabangan</h2>
         
-        <p class="content-text"><strong>a. Percabangan <code>if</code></strong></p>
-        <p class="content-text">Menjalankan blok kode jika kondisi bernilai benar (true).</p>
-        <p class="content-text">Sintaks:</p>
-        <img src="assets/if.png" alt="if">
-        <br><br>
+        <p class="content-text">Ada 4 jenis percabangan yaitu:</p>
+        <p class="content-text">a. Percabangan if</p>
+        <p class="content-text">Percabangan if digunakan untuk mengeksekusi satu blok kode jika kondisi yang diberikan bernilai benar (true). Jika kondisi tidak terpenuhi, maka blok kode di dalam if tidak dijalankan.</p>
+        <div class="code-block">
+        <span class="comment">// Percabangan if</span><br>
+            <br>
+            <span class="type">if</span> (kondisi) {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">// kode yang dijalankan jika kondisi benar</span><br>
+            }
+        </div>
+        <p class="content-text">b. Percabangan if-else</p>
+        <p class="content-text">Percabangan if-else digunakan ketika ada dua kemungkinan aksi: satu untuk kondisi benar, dan satu lagi untuk kondisi salah.</p>
+        <div class="code-block">
+        <span class="comment">// Percabangan if-else</span><br>
+            <br>
+            <span class="type">if</span> (kondisi) {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">// kode jika kondisi benar</span><br>
+            } else {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">// kode jika kondisi salah</span><br>
+            }
+        </div>
+        <p class="content-text">c. Percabangan if-else if-else</p>
+        <p class="content-text">Digunakan ketika ada lebih dari dua kemungkinan kondisi yang ingin diuji.</p>
+        <div class="code-block">
+        <span class="comment">// Percabangan if-else if-else</span><br>
+            <br>
+            <span class="type">if</span> (kondisi1) {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">// kode jika kondisi1 benar</span><br>
+            } else if (kondisi2) {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">// kode jika kondisi2 benar</span><br>
+            } else {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">// kode jika semua kondisi di atas salah</span><br>
+            }
+        </div>
+        <p class="content-text">d. Percabangan switch-case</p>
+        <p class="content-text">switch-case digunakan untuk memilih salah satu dari banyak kemungkinan aksi berdasarkan nilai sebuah variabel atau ekspresi. Cocok digunakan jika terdapat banyak pilihan yang mungkin.</p>
+        <div class="code-block">
+        <span class="comment">// Percabangan switch-case</span><br>
+            <br>
+            <span class="type">switch</span> (ekspresi) {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="type">case</span> nila1:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">// kode jika ekspresi == nilai1</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="type">case</span> nila2:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">// kode jika ekspresi == nilai2</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="type">break;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;// ...<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="type">default:</span><br>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">// kode jika tidak ada yang cocok</span><br>
+            }
+        </div>
+        <br>
 
-        <p class="content-text"><strong>b. Percabangan <code>if-else</code></strong></p>
-        <p class="content-text">Menjalankan satu blok kode jika kondisi benar, dan blok lain jika salah</p>
-        <p class="content-text">Sintaks:</p>
-        <img src="assets/if-else.png" alt="if-else">
-        <br><br>
-
-        <p class="content-text"><strong>c. Percabangan <code>else if</code></strong></p>
-        <p class="content-text">Memeriksa beberapa kondisi secara berurutan. Jika satu kondisi terpenuhi, blok terkait dijalankan.</p>
-        <p class="content-text">Sintaks:</p>
-        <img src="assets/else-if.png" alt="else-if">
-        <br><br>
-
-        <p class="content-text"><strong>d. Percabangan <code>switch</code></strong></p>
-        <p class="content-text">Digunakan untuk memeriksa nilai ekspresi terhadap banyak kemungkinan (case). Cocok untuk nilai tetap seperti angka atau karakter.</p>
-        <p class="content-text">Sintaks:</p>
-        <img src="assets/switch.png" alt="switch">
-        <br><br>
-
-        <h2 class="section-title">3. Contoh Program</h2>
-        <p class="content-text"><strong>a. Contoh <code>if..else</code></strong></p>
-        <img src="assets/contohif.png" alt="contoh if-else"> <br><br>
-        <p class="content-text"><strong>b. Contoh <code>switch</code></strong></p>
-        <img src="assets/contohswitch.png" alt="contoh switch">
-
-        
-
-        
-
-        
+        <!-- SECTION 3 -->
+        <h2 class="section-title">3. Ringkasan</h2>
+        <table>
+        <tr>
+            <th>Struktur Percabangan</th>
+            <th>Fungsi</th>
+            <th>Contoh Penggunaan</th>
+        </tr>
+        <tr>
+            <td>if</td>
+            <td>Mengeksekusi kode jika kondisi benar</td>
+            <td>Memeriksa apakah nilai lulus</td>
+        </tr>
+        <tr>
+            <td>if-else</td>
+            <td>Mengeksekusi kode jika kondisi benar atau salah</td>
+            <td>Menentukan lulus atau tidak lulus</td>
+        </tr>
+        <tr>
+            <td>if-else if-else</td>
+            <td>Memeriksa beberapa kondisi secara berurutan</td>
+            <td>Menentukan nilai huruf berdasarkan angka</td>
+        </tr>
+        <tr>
+            <td>switch</td>
+            <td>Memilih salah satu dari banyak kasus</td>
+            <td>Menampilkan nama hari berdasarkan nomor hari</td>
+        </tr>
+    </table>
+    <br>
+    </div>
 
     <!-- NAVIGATION BUTTONS -->
     <div class="nav-buttons">
-        <a href="variabel.php"><button class="nav-button">Kembali</button></a>
+        <a href="materi.php"><button class="nav-button">Kembali</button></a>
         <a href="perulangan.php"><button class="nav-button">Lanjut</button></a>
     </div>
 </main>
