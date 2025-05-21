@@ -26,7 +26,7 @@ if (!isset($_SESSION['user_id'])) {
         <div class="nav-links">
             <a href="index.php">Home</a>
             <a href="materi.php" class="active">Materi</a>
-            <a href="kuis.php">Quiz</a>
+            <a href="#">Quiz</a>
             <a href="update_profil.php" class="profile-icon">👤</a>
         </div>
     </div>
@@ -54,22 +54,13 @@ if (!isset($_SESSION['user_id'])) {
         <!-- SECTION 3 -->
         <h2 class="section-title">3. Fungsi void</h2>
         <p class="content-text">Fungsi dengan tipe void tidak mengembalikan nilai.</p>
-        <div class="code-block"><br>
-            <span class="type">void</span> cetakPesan() {
-                <br>&nbsp;&nbsp;&nbsp;cout << "Halo, ini fungsi void!" << endl;
-            <br>}</p>
-        </div>
+            <img src="assets/fungsi void.png" alt="Fungsi Void">
         <br>
 
          <!-- SECTION 4 -->
         <h2 class="section-title">4. Cara Memanggil Fungsi</h2>
         <p class="content-text">Setelah fungsi didefinisikan, panggil dengan menyebutkan nama dan memberikan argumen sesuai parameter:</p>
-        <div class="code-block"><br>
-            <span class="type">int</span> hasil = tambah(<span class="type">5</span>, <span class="type">3</span>); 
-        <br> cout << <span class="type">"hasil: "</span> << hasil << endl; <span class="comment">// Output: Hasil: 8</span></p><br>
-            <p>nilai [<span class="type">2</span>] = <span class="type">100</span>; &nbsp; <span class="comment">// mengubah elemen ketiga menjadi 100</span></p>
-            <br>
-        </div>
+          <img src="assets/cara memanggil fungsi.png" alt="cara memanggil fungsi">
         <br>
 
         <!-- SECTION 5 -->
@@ -77,34 +68,19 @@ if (!isset($_SESSION['user_id'])) {
         <p class="content-text">Array bisa memiliki lebih dari satu dimensi (misal: matriks).</p>
          <p class="content-text">- <strong>Parameter</strong> adalah variabel yang didefinisikan di fungsi.</p>
          <p class="content-text">- <strong>Argumen</strong> adalah nilai yang diberikan saat memanggil fungsi.</p>
-         <div class="code-block"><br>
-            <span class="type">void</span> sapa(string nama) {
-         <br>&nbsp;&nbsp;&nbsp; cout << <span class="type">"Halo, "</span> << nama << <span class="type">"!"</span> << endl; <br> }</p><br>
-            <p>sapa(<span class="type">"Andi"</span>); <span class="comment">// Output: Halo, Andi!</span></p><br>
-         </div>
+         <img src="assets/fungsi dengan parameter.png" alt="fungsi dengan parameter">
          <br>
 
           <!-- SECTION 6 -->
           <h2 class="section-title">6. Fungsi Prototype</h2>
           <p class="content-text">Fungsi prototype adalah deklarasi fungsi sebelum definisi lengkapnya, berguna agar fungsi bisa dipanggil sebelum definisinya muncul dalam kode.</p>
-          <div class="code-block"><br>
-            <span class="type">int</span> kali(<span class="type">int</span>); <span class="comment">// prototype</span><br><br>
-            <span class="type">int</span> main() {
-            <br>&nbsp;&nbsp;&nbsp;cout << kali(<span class="type">4</span>,<span class="type">5</span>); <br>&nbsp;&nbsp;&nbsp;<span class="type">return 0;</span> <br> }</p><br><br>
-            <span class="type">int</span> kali(<span class="type">int</span> a, <span class="type">int</span> b) {
-            <br>&nbsp;&nbsp;&nbsp;<span class="type">return</span> a * b; <br> }</p><br><br>
-         </div>
+          <img src="assets/Fungsi Prototype.png" alt="Fungsi Prototype">
          <br>
 
          <!-- SECTION 7 -->
           <h2 class="section-title">7. Fungsi Overloading</h2>
           <p class="content-text">C++ mendukung fungsi dengan nama sama tapi parameter berbeda, disebut fungsi overloading.</p>
-          <div class="code-block"><br>
-            <span class="type">int</span> tambah(<span class="type">int</span> a, <span class="type">int</span> b) {<br>
-            &nbsp;&nbsp;&nbsp;<span class="type">return</span> a + b; <br> }
-            <br><br><span class="type">double</span> tambah(</span><span class="type">double</span> a, <span class="type">double</span> b) {<br>
-            &nbsp;&nbsp;&nbsp;<span class="type">return</span> a + b; <br> } 
-         </div>
+          <img src="assets/Fungsi Overloading.png" alt="Fungsi Overloading">
          <br>
 
          <!-- SECTION 8 -->
@@ -117,8 +93,8 @@ if (!isset($_SESSION['user_id'])) {
 
     <!-- NAVIGATION BUTTONS -->
     <div class="nav-buttons">
-        <a href="array.php"><button class="nav-button">Kembali</button></a>
-        <a href="kuis.php"><button class="nav-button">Kuis</button></a>
+        <a href="materi.php"><button class="nav-button">Kembali</button></a>
+        <a href="pengenalan.php"><button class="nav-button">Lanjut</button></a>
     </div>
 </main>
 
